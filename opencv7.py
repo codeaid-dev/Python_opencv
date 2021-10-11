@@ -5,7 +5,8 @@ img = cv2.imread('./face1.jpg', cv2.IMREAD_COLOR)
 if img is None:
   sys.exit('画像が読み込めませんでした。')
 
-filename = 'C:/Users/birdy/anaconda3/pkgs/libopencv-4.0.1-hbb9e17c_0/Library/etc/haarcascades/haarcascade_frontalface_default.xml'
+#filename = 'C:/Users/birdy/anaconda3/pkgs/libopencv-4.0.1-hbb9e17c_0/Library/etc/haarcascades/haarcascade_frontalface_default.xml'
+filename = './.venv/lib/python3.9/site-packages/cv2/data/haarcascade_frontalface_default.xml'
 cascade = cv2.CascadeClassifier(filename)
 if cascade is None:
   sys.exit('ファイルが見つかりません。')
